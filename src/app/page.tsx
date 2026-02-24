@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 export default function LeaseCreate() {
   const [formData, setFormData] = useState({
     name: '',
+    buildingName: '',
     flatNumber: '',
     towerNo: '',
     leaseStartDate: '',
@@ -37,6 +38,7 @@ export default function LeaseCreate() {
         setMessage(data.message);
         setFormData({
           name: '',
+          buildingName: '',
           flatNumber: '',
           towerNo: '',
           leaseStartDate: '',
@@ -54,7 +56,7 @@ export default function LeaseCreate() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-black flex items-center justify-center p-6 font-sans">
+    <div className="min-h-screen bg-black text-white flex items-center justify-center p-6 font-sans">
       <div className="w-full max-w-2xl">
         {/* Header Section */}
         <div className="mb-10 space-y-2">
@@ -87,6 +89,20 @@ export default function LeaseCreate() {
                   onChange={handleChange}
                   className="w-full bg-black/40 border border-zinc-800 rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all text-sm"
                   placeholder="e.g. John Doe"
+                />
+              </div>
+
+              {/* Building Name Field */}
+              <div className="space-y-2">
+                <label className="text-sm font-medium text-zinc-300 ml-1">Building Name</label>
+                <input
+                  type="text"
+                  name="buildingName"
+                  required
+                  value={formData.buildingName}
+                  onChange={handleChange}
+                  className="w-full bg-black/40 border border-zinc-800 rounded-xl px-4 py-3 placeholder-zinc-600 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 transition-all text-sm"
+                  placeholder="e.g. Apex Heights"
                 />
               </div>
 

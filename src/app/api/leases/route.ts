@@ -7,6 +7,7 @@ export async function POST(request: Request) {
         // Explicit server-side validation (Deterministic Backend Principle)
         const requiredFields = [
             'name',
+            'buildingName',
             'flatNumber',
             'towerNo',
             'leaseStartDate',
@@ -25,6 +26,7 @@ export async function POST(request: Request) {
         // Convert to explicit schema types
         const leaseData = {
             name: String(body.name),
+            buildingName: String(body.buildingName),
             flatNumber: String(body.flatNumber),
             towerNo: String(body.towerNo),
             leaseStartDate: new Date(body.leaseStartDate).toISOString(),
