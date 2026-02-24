@@ -54,14 +54,14 @@ export default function LeaseCreate() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0A0A0B] text-white flex items-center justify-center p-6 font-sans">
+    <div className="min-h-screen bg-white text-black flex items-center justify-center p-6 font-sans">
       <div className="w-full max-w-2xl">
         {/* Header Section */}
         <div className="mb-10 space-y-2">
           <div className="inline-block px-3 py-1 rounded-full border border-zinc-800 bg-zinc-900/50 mb-4">
             <span className="text-xs font-semibold tracking-wide text-zinc-400 uppercase">Core Platform</span>
           </div>
-          <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-br from-white to-zinc-500 bg-clip-text text-transparent">
+          <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-br from-black to-zinc-500 bg-clip-text text-transparent">
             Create Lease
           </h1>
           <p className="text-zinc-400 text-lg">
