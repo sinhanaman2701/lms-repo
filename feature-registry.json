@@ -1,0 +1,18 @@
+{
+    "features": [
+        {
+            "id": "create_lease",
+            "description": "Create a new lease agreement",
+            "endpoint": "/api/leases",
+            "method": "POST",
+            "parameters": {
+                "name": "string",
+                "flatNumber": "string",
+                "towerNo": "string",
+                "leaseStartDate": "string",
+                "leaseEndDate": "string",
+                "monthlyLeaseAmount": "number"
+            }
+        }
+    ]
+}
